@@ -57,7 +57,7 @@ export const Project = ({
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          onClick={() => setIsOpen(true)}
+          onClick={() => window.open(projectLink, "_blank")}
           className={styles.projectImage}
         >
           <Image
