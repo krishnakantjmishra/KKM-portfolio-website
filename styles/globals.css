@@ -10,12 +10,12 @@
   --brand: #BD5FFF;
   --brand-rgb: 189, 95, 255;
 
-  --text-xs: clamp(1.2rem, 0.8rem + 1vw, 1.4rem);
-  --text-sm: clamp(1.4rem, 1rem + 1.2vw, 1.6rem);
-  --text-md: clamp(1.8rem, 1.4rem + 1.5vw, 2.2rem);
-  --text-lg: clamp(2.4rem, 2rem + 2vw, 3.6rem);
-  --text-xl: clamp(3.6rem, 3rem + 4vw, 5.6rem);
-  --text-2xl: clamp(4.8rem, 4rem + 8vw, 9.6rem);
+  --text-xs: clamp(1.4rem, 1rem + 1vw, 1.4rem);
+  --text-sm: clamp(1.6rem, 1.2rem + 1.2vw, 1.8rem);
+  --text-md: clamp(2rem, 1.6rem + 1.5vw, 2.2rem);
+  --text-lg: clamp(2.8rem, 2.4rem + 2vw, 3.6rem);
+  --text-xl: clamp(4rem, 3.5rem + 4vw, 5.6rem);
+  --text-2xl: clamp(5.6rem, 5rem + 8vw, 9.6rem);
 }
 
 * {

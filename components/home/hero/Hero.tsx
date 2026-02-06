@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { StandardButton } from "@/components/buttons/StandardButton";
+import { OutlineButton } from "@/components/buttons/OutlineButton";
 import { Reveal } from "@/components/utils/Reveal";
 import { DotGrid } from "./DotGrid";
 import styles from "./hero.module.scss";
@@ -29,11 +29,9 @@ export const Hero = () => {
             </p>
           </Reveal>
           <Reveal>
-            <StandardButton
-              onClick={() => document.getElementById("contact")?.scrollIntoView()}
-            >
-              Contact me
-            </StandardButton>
+            <OutlineButton onClick={() => window.open("/Krishnakant_Mishra_Resume.pdf")}>
+              My resume
+            </OutlineButton>
           </Reveal>
         </div>
         <motion.div
