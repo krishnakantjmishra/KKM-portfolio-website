@@ -8,7 +8,7 @@
 
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 50; // Increased z-index to stay above other elements
   background: var(--bg-opaque);
   backdrop-filter: blur(12px);
 
@@ -20,13 +20,68 @@
   }
 }
 
-.headingButtons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+.navWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  position: relative;
+}
 
-    > a {
-      height: 46px;
+.menuToggle {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--brand);
+  }
+}
+
+.navMenu {
+  position: absolute;
+  top: calc(100% + 1rem);
+  right: 0;
+  background: var(--background-dark);
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  min-width: 200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--background-light);
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    font-weight: 400;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--brand);
     }
+  }
+
+  .selected {
+    color: var(--brand);
+    font-weight: bold;
+  }
+}
+
+.headingButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  >a {
+    height: 46px;
+  }
 }
