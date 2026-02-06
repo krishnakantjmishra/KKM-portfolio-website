@@ -6,6 +6,13 @@
   max-width: 75%;
   display: grid;
   z-index: 0;
+
+  @media (max-width: 980px) {
+    max-width: 100%;
+    right: 0;
+    top: -24px; // Move up to cover gap with sticky header
+    bottom: -24px;
+  }
 }
 
 .dotWrapper {
@@ -27,11 +34,9 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
-.dotWrapper:hover > .dot {
-  background: linear-gradient(
-    180deg,
-    var(--background),
-    var(--brand)
-  ) !important;
+.dotWrapper:hover>.dot {
+  background: linear-gradient(180deg,
+      var(--background),
+      var(--brand)) !important;
   opacity: 1 !important;
 }

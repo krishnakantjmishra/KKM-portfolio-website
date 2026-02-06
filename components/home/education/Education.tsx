@@ -48,13 +48,13 @@ const education = [
         time: "2019 - 2022",
         degree: "Bsc Computer Science",
         location: "Athwagate, Surat",
-        description: "Completed with a 7.2 CGPA. Foundations in software engineering and data structures.",
+        description: "Completed with distinction. Foundations in software engineering and data structures.",
     },
     {
         title: "M T Jariwala High School",
         time: "2017 - 2019",
         degree: "HSC (Science - Maths Stream)",
         location: "Athwagate, Surat",
-        description: "Completed with 60%.",
+        description: "Focusing on core science and mathematics.",
     },
 ];
