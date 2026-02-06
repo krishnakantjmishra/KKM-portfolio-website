@@ -1,0 +1,173 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000000000;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+  overflow-y: scroll;
+}
+
+.modalCard {
+  background: #111;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: 1.2rem;
+  position: relative;
+  overflow-y: auto;
+  padding: 2.4rem;
+  border: 1px solid var(--text-transparent);
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--brand);
+    border-radius: 4px;
+  }
+}
+
+.closeModalBtn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 2.4rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--brand);
+  }
+}
+
+.modalHeader {
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--text-transparent);
+
+  h3 {
+    font-size: 2.4rem;
+    color: var(--brand);
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    font-size: var(--text-sm);
+    color: var(--text-light);
+  }
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.projectItem {
+  display: flex;
+  gap: 2.4rem;
+  padding: 1.6rem;
+  background: var(--background-light);
+  border-radius: 0.8rem;
+  border: 1px solid var(--text-transparent);
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: var(--brand);
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+  width: 240px;
+  height: 160px;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.projectContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.techChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+
+  .chip {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    background: rgba(var(--brand-rgb), 0.1);
+    color: var(--brand);
+    border-radius: 4px;
+    font-weight: 500;
+  }
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 1.6rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.6rem;
+  
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.4rem;
+    color: var(--brand);
+    font-weight: 500;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  }
+}
