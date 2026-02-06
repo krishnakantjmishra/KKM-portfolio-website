@@ -26,15 +26,19 @@ export const Contact = () => {
           </p>
         </Reveal>
         <Reveal width="100%">
-          <Link href="mailto:krishnakantmishra.dev@gmail.com">
-            <div className={styles.contactEmail}>
-              <AiFillMail size="2.4rem" />
-              <span>Send Email</span>
-            </div>
-            <div className={styles.contactEmail} style={{ marginTop: '1rem', fontSize: '1.6rem', color: "var(--brand)" }}>
-              <span>+91 8732916693</span>
-            </div>
-          </Link>
+          <div className={styles.contactEmailWrapper}>
+            <Link href="mailto:krishnakantmishra.dev@gmail.com">
+              <div className={styles.contactEmail}>
+                <AiFillMail size="2.4rem" />
+                <span>Send Email</span>
+              </div>
+            </Link>
+            <Link href="tel:+918732916693">
+              <div className={styles.contactPhone}>
+                <span>+91 8732916693</span>
+              </div>
+            </Link>
+          </div>
         </Reveal>
       </div>
     </section>

@@ -8,23 +8,25 @@
 
   position: sticky;
   top: 0;
-  z-index: 50; // Increased z-index to stay above other elements
+  z-index: 100; // High z-index to stay above everything
   background: var(--bg-opaque);
   backdrop-filter: blur(12px);
 
-  font-size: var(--text-md);
-  font-weight: bold;
-
   @media (max-width: 768px) {
-    padding: 0 2.4rem;
+    padding: 0 1.6rem;
+    height: calc(45px + 2rem);
   }
 }
 
 .navWrapper {
   display: flex;
   align-items: center;
-  gap: 2.4rem;
+  gap: 1.2rem; // Reduced gap for mobile
   position: relative;
+
+  @media (min-width: 768px) {
+    gap: 2.4rem;
+  }
 }
 
 .menuToggle {
@@ -45,24 +47,38 @@
 
 .navMenu {
   position: absolute;
-  top: calc(100% + 1rem);
+  top: calc(100% + 0.5rem);
   right: 0;
   background: var(--background-dark);
-  padding: 2.4rem;
+  padding: 2rem;
   border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  min-width: 200px;
+  min-width: 180px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   border: 1px solid var(--background-light);
+
+  @media (max-width: 480px) {
+    position: fixed;
+    top: calc(45px + 2rem);
+    left: 1.6rem;
+    right: 1.6rem;
+    min-width: auto;
+  }
 
   a {
     color: var(--text);
     text-decoration: none;
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
     font-weight: 400;
     transition: color 0.2s;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    &:last-child {
+      border-bottom: none;
+    }
 
     &:hover {
       color: var(--brand);
@@ -78,10 +94,18 @@
 .headingButtons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
 
   >a {
-    height: 46px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 480px) {
+    button {
+      font-size: 1.2rem;
+      padding: 0.6rem 1rem;
+    }
   }
 }

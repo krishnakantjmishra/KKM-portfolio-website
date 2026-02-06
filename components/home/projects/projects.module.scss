@@ -53,6 +53,10 @@
     flex-shrink: 0;
 
     max-width: calc(100% - 150px);
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   a {
