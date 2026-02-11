@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
@@ -13,7 +13,7 @@ interface Project {
     code: string;
     projectLink: string;
     tech: string[];
-    description: string;
+    description: ReactNode;
     modalContent: JSX.Element;
 }
 

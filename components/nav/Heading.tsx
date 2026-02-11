@@ -84,7 +84,7 @@ export const Heading = () => {
               ))}
               {/* Added Resume link in dropdown */}
               <a
-                href="/Krishnakant_Mishra_Resume.pdf"
+                href="/Krishnakant_Backend_Developer_Python_AWS.pdf"
                 target="_blank"
                 rel="nofollow"
                 onClick={() => setIsOpen(false)}

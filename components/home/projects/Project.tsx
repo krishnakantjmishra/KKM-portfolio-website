@@ -2,13 +2,13 @@ import Image from "next/image";
 import { Reveal } from "@/components/utils/Reveal";
 import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import styles from "./projects.module.scss";
 interface Props {
   modalContent: JSX.Element;
-  description: string;
+  description: ReactNode;
   projectLink: string;
   imgSrc: string;
   tech: string[];

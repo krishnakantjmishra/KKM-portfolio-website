@@ -2,13 +2,14 @@ import { Reveal } from "@/components/utils/Reveal";
 import styles from "./experience.module.scss";
 import Link from "next/link";
 import { AiOutlineExport } from "react-icons/ai";
+import { ReactNode } from "react";
 
 interface Props {
   title: string;
   position: string;
   time: string;
   location: string;
-  description: string;
+  description: ReactNode;
   tech: string[];
   companyLink?: string;
 }

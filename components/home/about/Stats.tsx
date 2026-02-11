@@ -47,6 +47,7 @@ export const Stats = () => {
             <span className="chip">Gunicorn</span>
             <span className="chip">Docker</span>
             <span className="chip">SMTP Mail</span>
+            <span className="chip">NodeJS</span>
             <span className="chip">JavaScript</span>
             <span className="chip">Tailwind CSS</span>
           </div>

@@ -18,23 +18,28 @@ const experience = [
     position: "Python AWS Developer",
     time: "Jan 2024 - Present",
     location: "Surat, Gujarat",
-    description:
-      "Worked as a Software Python AWS Developer, utilizing Python, AWS Lambda, DynamoDB, API Gateway, FastAPI, S3, EFS, MongoDB, and Redis to build and maintain scalable applications.",
+    description: (
+      <>
+        <b>Architected</b> core backend logic for <b>MemberRate, TravelAgent, and GuestwiseRate</b> modules, enabling tiered pricing and agent-specific flows.
+        Engineered a production-level <b>Hotel Booking System</b> and serverless workflows handling <span style={{ color: "var(--brand)" }}>real-time</span>
+        booking and inventory for <b>5000+ hotels</b>. Optimized performance via <b>Redis</b> and maintained robust <b>CI/CD pipelines</b>.
+      </>
+    ),
     companyLink: "https://www.theaccessgroup.com/en-gb/",
     tech: [
       "Python",
       "AWS Lambda",
-      "Azure",
-      "AWS EC2",
       "DynamoDB",
       "API Gateway",
       "FastAPI",
       "S3",
       "EFS",
       "MongoDB",
+      "Redis",
       "GitHub",
       "CI/CD",
-      "Redis",
+      "Azure",
+      "AWS EC2",
     ],
   },
   {
@@ -42,8 +47,13 @@ const experience = [
     position: "Jr. Software Developer",
     time: "Oct 2022 - June 2023",
     location: "Surat, Gujarat",
-    description:
-      "Worked as a Full Stack Developer with a primary focus on Node.js backend development. Built and maintained RESTful APIs, managed database interactions, and collaborated with the team to integrate frontend and backend services.",
+    description: (
+      <>
+        Developed and maintained <b>scalable RESTful APIs</b> using <b>Node.js, Express, and MongoDB</b>.
+        Collaborated on <b>Full Stack</b> initiatives to integrate complex frontend logic with secure backend services,
+        improving system efficiency and user engagement.
+      </>
+    ),
     companyLink: "https://www.owytechnosys.com/",
     tech: [
       "Node.js",
@@ -60,8 +70,12 @@ const experience = [
     position: "Software Services Support",
     time: "Sept 2021 - Sept 2022",
     location: "Surat, Gujarat",
-    description:
-      "Provided software support and troubleshooting for clients. Handled communication to resolve issues effectively and ensured client satisfaction with software services.",
+    description: (
+      <>
+        Resolved complex <b>technical issues</b> and provided high-level support for software services.
+        Acted as a <b>technical liaison</b> between clients and engineers to ensure 100% resolution of reported bugs.
+      </>
+    ),
     companyLink: "https://www.owytechnosys.com/",
     tech: ["Technical Support", "Client Communication", "Troubleshooting"],
   },

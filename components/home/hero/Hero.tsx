@@ -29,7 +29,7 @@ export const Hero = () => {
             </p>
           </Reveal>
           <Reveal>
-            <OutlineButton onClick={() => window.open("/Krishnakant_Mishra_Resume.pdf")}>
+            <OutlineButton onClick={() => window.open("/Krishnakant_Backend_Developer_Python_AWS.pdf")}>
               My resume
             </OutlineButton>
           </Reveal>
@@ -44,8 +44,6 @@ export const Hero = () => {
             src={Profile}
             priority
             alt="Krishnakant | Backend Developer"
-            width={400}
-            height={400}
           />
         </motion.div>
       </div>
